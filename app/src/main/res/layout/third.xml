@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/editsearch3"
+        android:layout_width="326dp"
+        android:layout_height="62dp"
+
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="42dp"
+
+        android:background="@drawable/round"
+        android:drawableLeft="@drawable/search_24"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="버스 검색하기"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+        android:textColor="#191982"
+        android:textColorHint="#596485"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgMap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txttime"
+        android:src="@drawable/map" />
+
+    <ImageView
+        android:id="@+id/imgBus"
+        android:layout_width="46dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:scaleType="centerInside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editsearch3"
+        android:src="@drawable/blue_bus_big" />
+
+    <TextView
+        android:id="@+id/txt1224"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="32dp"
+        android:text="1224"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/imgBus"
+        app:layout_constraintTop_toBottomOf="@+id/editsearch3" />
+
+    <TextView
+        android:id="@+id/txtseoul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="4dp"
+        android:text="서울 | 상계동 ~ 청량리"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgBus" />
+
+    <TextView
+        android:id="@+id/txttime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="5dp"
+        android:text="04:30 ~ 23:20 *배차간격 8분"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtseoul" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

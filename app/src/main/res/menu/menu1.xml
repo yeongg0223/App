@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/item1"
+        android:title="국민은행중화동지점" />
+    <item
+        android:id="@+id/item2"
+        android:title="중랑역.동부시장(중)" />
+    <item
+        android:id="@+id/item3"
+        android:title="중랑교(중)" />
+    <item
+        android:id="@+id/item4"
+        android:title="삼육서울병원(중)" />
+    <item
+        android:id="@+id/item5"
+        android:title="시조사삼거리(중)" />
+    <item
+        android:id="@+id/item6"
+        android:title="떡전교사거리.동대문노인복지관(중)" />
+    <item
+        android:id="@+id/item7"
+        android:title="청량리미주상가앞" />
+</menu>

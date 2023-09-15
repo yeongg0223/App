@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <android.widget.Button
+        android:id="@+id/button2"
+        android:layout_width="270dp"
+        android:layout_height="107dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="192dp"
+        android:background="@drawable/btnround"
+        android:text="버스 예약"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <android.widget.Button
+        android:id="@+id/button3"
+        android:layout_width="270dp"
+        android:layout_height="107dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="328dp"
+
+        android:background="@drawable/btnround"
+        android:text="예약 검색"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <android.widget.Button
+        android:id="@+id/button"
+        android:layout_width="270dp"
+        android:layout_height="107dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="52dp"
+        android:background="@drawable/btnround"
+        android:backgroundTint="#191982"
+        android:text="버스 검색"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="168dp"
+        android:layout_marginTop="72dp"
+        android:text="저상버스"
+        android:textColor="#191982"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="59dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="64dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/blue_bus_big" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="50dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/blue_person_big" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
