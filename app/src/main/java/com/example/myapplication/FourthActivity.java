@@ -88,7 +88,7 @@ public class FourthActivity extends Activity {
                 textV3.setText("떡전교사거리.동대문노인복지관(중)");
                 return true;
             case R.id.item77:
-                textV3.setText("청량리미주상가앞");
+                textV3.setText("은행사거리");
                 return true;
 
             case R.id.itemTime1:
@@ -139,6 +139,27 @@ public class FourthActivity extends Activity {
 
         imageView.setImageResource(R.drawable.blue_bus_big);
 
+        textV2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openContextMenu(textV2);
+            }
+        });
+
+        textV3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openContextMenu(textV3);
+            }
+        });
+
+        textV4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openContextMenu(textV4);
+            }
+        });
+
         button44.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -163,20 +184,13 @@ public class FourthActivity extends Activity {
             }
         });
 
-        textV4.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openContextMenu(textV4);
-            }
-        });
-
         button8.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 // AlertDialog.Builder를 사용하여 팝업 창을 생성
                 AlertDialog.Builder builder = new AlertDialog.Builder(FourthActivity.this);
                 builder.setTitle("예약하시겠습니까?"); // 팝업 창 제목
-                builder.setMessage("2023.09.15 (금)\n1224번 삼육서울병원(중) → 청량리미주상가앞\n13:00"); // 팝업 창 메시지
+                builder.setMessage("2023.09.18 (금)\n1224번 삼육서울병원(중) → 은행사거리\n13:00"); // 팝업 창 메시지
 
                 // 확인 버튼을 눌렀을 때의 동작 설정
                 builder.setPositiveButton("확인", new DialogInterface.OnClickListener() {
@@ -185,7 +199,7 @@ public class FourthActivity extends Activity {
                         // MainActivity로 이동하는 코드를 여기에 추가
                         Intent intent = new Intent(FourthActivity.this, MainActivity.class);
                         startActivity(intent);
-                        Toast.makeText(getApplicationContext(), "예약이 완료되었습니다.\n2023.09.15 13:00 1224번", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getApplicationContext(), "예약이 완료되었습니다.\n2023.09.18 13:00 1224번", Toast.LENGTH_SHORT).show();
                     }
                 });
 
