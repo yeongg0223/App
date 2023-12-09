@@ -45,6 +45,18 @@
         app:layout_constraintTop_toBottomOf="@+id/editsearch3"
         android:src="@drawable/busicon" />
 
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="33dp"
+        android:layout_height="76dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="56dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/txtseoul"
+        app:layout_constraintTop_toBottomOf="@+id/editsearch3"
+        app:srcCompat="@drawable/star1" />
+
     <TextView
         android:id="@+id/txt1224"
         android:layout_width="wrap_content"
