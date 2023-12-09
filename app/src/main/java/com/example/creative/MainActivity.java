@@ -289,6 +289,8 @@ public class MainActivity extends AppCompatActivity {
                                     textView8.setVisibility(View.INVISIBLE);
                                     imageView3.setVisibility(View.INVISIBLE);
                                     imageView5.setVisibility(View.INVISIBLE);
+                                    imageView6.setVisibility(View.INVISIBLE);
+                                    textView12.setVisibility(View.INVISIBLE);
                                 }
                             }, 1000); // 1초(2000 milliseconds) 지연
                         }
